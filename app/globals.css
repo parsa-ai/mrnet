@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-GratoGrotesk), sans-serif;
+}
+@theme { 
+  --color-blue : #00E4F0;
+}
+.main-container{
+  @apply px-4 md:px-9;
+}
