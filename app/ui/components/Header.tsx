@@ -7,7 +7,7 @@ export default function Header() {
   const menuItems = ['Технология', 'Платформа управления', 'тест-драйв', 'Наша сеть', 'Оставить заявку']
   return (
     <>
-      <header className="w-full sticky bg-black py-7.5 main-container md:p-9 top-0 left-0 z-40">
+      <header className="w-full sticky bg-black py-7.5 main-container md:p-9 top-0 left-0 z-70">
         <div className="flex lg:items-end items-center justify-between ">
           <div className="flex-col lg:flex-row lg:items-end items-start flex gap-4 lg:gap-14">
             <Link href="/" className="flex items-center gap-3">
@@ -22,7 +22,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center text-sm min-w-7/12 justify-between">
             {menuItems.map((item, index) => {
               return (
-                <Link href="#" key={index} className={`text-white/90 hover:text-white ${index === 4 ? "text-blue!" : ""}`}>{item}</Link>
+                <Link href="#" key={index} className={`text-white/90 uppercase hover:text-white ${index === 4 ? "text-blue!" : ""}`}>{item}</Link>
               )
             })}
           </nav>
@@ -44,11 +44,11 @@ export default function Header() {
         {/* Mobile full-screen menu */}
 
       </header>
-      <div className={`h-[calc(100dvh-125px)] mb-24 transition absolute bg-black w-full  ${open ? "opacity-100" : "opacity-0"}`} >
+      <div className={`h-[calc(100dvh-125px)] z-100 mb-24 transition fixed bg-black w-full  ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} >
         <nav className="flex flex-col items-start gap-6 text-sm min-w-7/12 justify-between main-container">
           {menuItems.map((item, index) => {
             return (
-              <Link href="#" key={index} className={`text-white/90 hover:text-white text-2xl ${index === 4 ? "text-blue!" : ""}`}>{item}</Link>
+              <Link href="#" key={index} className={`text-white/90 uppercase hover:text-white text-2xl ${index === 4 ? "text-blue!" : ""}`}>{item}</Link>
             )
           })}
         </nav>
