@@ -9,7 +9,7 @@ export default function InfinitySlider({ partners }: { partners: string[] }) {
     const items = [...partners, ...partners];
 
     return (
-        <div className="w-full py-6 overflow-hidden">
+        <div className="w-full overflow-hidden">
             <Swiper
                 modules={[Autoplay]}
                 slidesPerView="auto"
