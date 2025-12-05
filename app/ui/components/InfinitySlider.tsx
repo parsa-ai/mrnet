@@ -25,7 +25,7 @@ export default function InfinitySlider({ partners }: { partners: string[] }) {
                 {items.map((src, i) => (
                     <SwiperSlide
                         key={i}
-                        className="!w-fit flex items-center justify-center"
+                        className="w-fit! flex items-center justify-center"
                     >
                         <img
                             src={src}
