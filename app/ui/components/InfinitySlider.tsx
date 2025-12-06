@@ -7,17 +7,17 @@ import "swiper/css";
 export default function InfinitySlider({ partners }: { partners: string[] }) {
     // Duplicate to fix loop warning & make perfect infinite scroll
     const items = [...partners, ...partners];
-
+    
     return (
-        <div className="w-full overflow-hidden">
+        <div className="w-full overflow-hidden" id="sliderss">
             <Swiper
                 modules={[Autoplay]}
                 slidesPerView="auto"
-                spaceBetween={30}
+                spaceBetween={120}
                 loop={true}
                 speed={4000}
                 autoplay={{
-                    delay: 0,
+                    delay: 1,
                     disableOnInteraction: false,
                 }}
                 allowTouchMove={false}

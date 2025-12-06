@@ -33,7 +33,7 @@ function Technology() {
             <section className="flex flex-col lg:flex-row gap-3 main-container">
                 <article className="w-full lg:w-5/12 flex flex-col gap-3">
                     <Cards type="blue" className="flex min-h-[220px]  flex-col justify-between" >
-                        <p className="text-[19px] lg:text-[26px]  uppercase">мониторинг</p>
+                        <p className="text-[19px] lg:text-[26px] uppercase">мониторинг</p>
                         <p className="text-lg/[170%] lg:text-lg/[250%]">
                             Графики потребления трафика
 
@@ -41,7 +41,7 @@ function Technology() {
                         </p>
                     </Cards>
                     <Cards type="blue" className="flex min-h-[220px]  flex-col justify-between" >
-                        <p className="text-[26px]  uppercase">мониторинг</p>
+                        <p className="text-[19px] lg:text-[26px] uppercase">мониторинг</p>
                         <p className="text-lg/[170%] lg:text-lg/[250%]">
                             Графики потребления трафика
 
@@ -56,6 +56,7 @@ function Technology() {
             <section className="main-container mt-9 flex justify-center ">
                 <Button>Испытать все возможности</Button>
             </section>
+            
         </>
     )
 }
