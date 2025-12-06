@@ -49,7 +49,7 @@ function Solution() {
                     <p className="text-lg/[22px] lg:text-2xl">Развивайте свою инфру с mrnet. Без лишних затрат и костылей. Высокоскоростной интернет — удобно, эффективно!</p>
                 </article>
                 <article className="w-full  lg:w-1/2 lg:min-h-[400px] h-full mt-10 lg:mt-0">
-                    <Image width={3500} height={3500} className="w-full max-h-[400px] min-h-[inherit] h-full object-cover rounded-lg" src='/images/wifi.jpg' alt="hero" />
+                    <Image width={3500} height={3500} className="w-full max-h-[400px] min-h-[inherit] h-full object-cover rounded-lg" src='/images/Wifi.jpg' alt="hero" />
                 </article>
             </section>
             <section className="main-container py-3 lg:py-6 flex justify-center items-center">
